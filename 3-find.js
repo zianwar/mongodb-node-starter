@@ -21,15 +21,14 @@ client.connect().then(() => {
   return col.findOne({ country: 'Morocco' })
   .then(result => {
     console.log(result);
-    // assert.equal(1, result.matchedCount);
   });
 })
 .then(() => {
   // Finds a single document by id
-  return col.findOne({ _id: ObjectID('5e225520e6e0458704f9927d') })
-  .then((result) => {
-    console.log('Result:', result);
-  });
+  // return col.findOne({ _id: ObjectID('5e225520e6e0458704f9927d') })
+  // .then((result) => {
+  //   console.log('Result:', result);
+  // });
 })
 .then(() => {
   // Get first two documents that match the query
