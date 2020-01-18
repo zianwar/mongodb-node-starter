@@ -40,7 +40,7 @@ client.connect().then(() => {
     });
 })
 .catch(err => {
-  console.log('err:', err);
+  console.log('Error:', err);
 })
 .finally(() => {
   console.log("Client connection closed");
