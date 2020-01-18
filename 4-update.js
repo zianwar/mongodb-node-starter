@@ -27,8 +27,8 @@ client.connect().then(() => {
   // Update multiple documents
   return col.updateMany({ continent: 'Europe' }, { $set: { curency: 'EUR' } })
     .then(result => {
-      assert.equal(1, result.matchedCount);
-      assert.equal(1, result.modifiedCount);
+      assert.equal(2, result.matchedCount);
+      assert.equal(2, result.modifiedCount);
     });
 })
 .then(() => {
